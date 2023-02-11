@@ -315,23 +315,31 @@ public class VillagerInit {
 
         // MINER TRADES
         VillagerTrades.ITrade[] minerLevel1 = new VillagerTrades.ITrade[]{
-                new VillagerTrades.EmeraldForItemsTrade(Items.COBBLESTONE,20,16,2),
-                new VillagerTrades.ItemsForEmeraldsTrade(Items.STONE, 1, 10, 10, 1)
+                new VillagerTrades.EmeraldForItemsTrade(Items.OAK_PLANKS,20,5,2),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.COBBLESTONE, 1, 10, 10, 1),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.ANDESITE, 1, 10, 10, 1),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.DIORITE, 1, 10, 10, 1),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.GRANITE, 1, 10, 10, 1),
+                new VillagerTrades.EmeraldForItemsTrade(Items.TORCH,12,5,2),
         };
         VillagerTrades.ITrade[] minerLevel2 = new VillagerTrades.ITrade[]{
-                new VillagerTrades.EmeraldForItemsTrade(Items.COAL,15,16,10),
-                new VillagerTrades.EmeraldForItemsTrade(Items.IRON_ORE,4,6,10),
+                new VillagerTrades.EmeraldForItemsTrade(Items.IRON_PICKAXE, 1, 1, 10),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.COAL,1,10,10, 10),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.IRON_NUGGET,1,25,10, 10)
         };
         VillagerTrades.ITrade[] minerLevel3 = new VillagerTrades.ITrade[]{
-                new VillagerTrades.EmeraldForItemsTrade(Items.GOLD_ORE,3,5,20),
-                new VillagerTrades.ItemsForEmeraldsTrade(Items.LAPIS_LAZULI, 6, 9, 12, 10)
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.STONE, 1, 10, 10, 15),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.GOLD_NUGGET,1,16,15, 15),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.LAPIS_LAZULI, 1, 2, 15, 15)
         };
         VillagerTrades.ITrade[] minerLevel4 = new VillagerTrades.ITrade[]{
-                new VillagerTrades.EmeraldForItemsTrade(Items.TORCH,50,12,30),
+                new VillagerTrades.EmeraldForItemsTrade(Items.LANTERN,1,5,20),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.REDSTONE, 1, 8, 8, 20),
                 new VillagerTrades.EmeraldForMapTrade(13, Structure.MINESHAFT, MapDecoration.Type.BANNER_BROWN, 12, 15)
         };
         VillagerTrades.ITrade[] minerLevel5 = new VillagerTrades.ITrade[]{
-                new VillagerTrades.EnchantedItemForEmeraldsTrade(Items.DIAMOND_PICKAXE, 12, 3, 15, 0.2F)
+                new VillagerTrades.EnchantedItemForEmeraldsTrade(Items.DIAMOND_PICKAXE, 12, 3, 15, 0.2F),
+                new VillagerTrades.ItemsForEmeraldsTrade(Items.DIAMOND, 25, 1, 1, 30)
         };
         VillagerTrades.TRADES.put(MINER.get(),toIntMap(ImmutableMap.of(1,minerLevel1,2,minerLevel2,3,minerLevel3,4,minerLevel4,5,minerLevel5)));
     }
